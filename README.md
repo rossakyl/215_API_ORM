@@ -3,3 +3,6 @@ hasil get
 
 hasil post
 <img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/31bc752c-11fb-4f00-a8d9-f1bef94a91d6" />
+
+hasil Delete
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/d3964796-0fcc-4005-934b-4312ae4ff3ef" />
