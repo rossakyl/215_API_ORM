@@ -29,6 +29,17 @@ app.post('/komik', async (req, res) => {
   }
 });
 
+app.delete('/komik/:id', async (req, res) => {
+  try {
+    await db.Komik.destroy({
+      where: { id: req.params.id }
+    });
+    res.json({ message: "Komik berhasil dihapus" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 db.sequelize.sync()
     .then((result) => {
         app.listen(3000 , () => {
