@@ -20,6 +20,15 @@ app.get('/komik', async (req, res) => {
   }
 });
 
+app.post('/komik', async (req, res) => {
+  try {
+    const newKomik = await db.Komik.create(req.body);
+    res.status(201).json(newKomik);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
 db.sequelize.sync()
     .then((result) => {
         app.listen(3000 , () => {
