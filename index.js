@@ -11,6 +11,15 @@ app.listen(PORT, () => {
     console.log('server started on port 3000');
 });
 
+app.get('/komik', async (req, res) => {
+  try {
+    const komiks = await db.Komik.findAll();
+    res.json(komiks);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 db.sequelize.sync()
     .then((result) => {
         app.listen(3000 , () => {
