@@ -6,3 +6,6 @@ hasil post
 
 hasil Delete
 <img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/d3964796-0fcc-4005-934b-4312ae4ff3ef" />
+
+hasil put 
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/b4854e84-684b-4362-89f5-3af1b8f10717" />
